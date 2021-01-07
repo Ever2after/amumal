@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'home.dart';
 import 'setting1.dart';
 import 'setting2.dart';
@@ -22,10 +23,10 @@ class MyApp extends StatelessWidget {
         '/setting2' : (context) => Setting2(),
         '/setSubject' : (context) => SetSubject(),
         '/setTimer' : (context) => SetTimer(),
-        '/storeWord' : (context) => StoreWord(),
+        '/storeWord' : (context) => StoreWord()
       },
       theme: ThemeData(
-
+        fontFamily: 'RidiBatang'
       ),
     );
   }
